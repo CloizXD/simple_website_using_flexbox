@@ -1,0 +1,166 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+
+body {
+    background-color: rgb(234, 234, 210);
+    
+}
+
+p {
+    font-size: 14px;
+    
+}
+
+.header {
+    background-color: rgb(221, 168, 83);
+    text-align: center;
+    padding: 50px;
+}
+
+.header h1, p {
+    margin-block: 5px;
+    
+    
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.nav-bar {
+    
+    background-color: rgb(24, 59, 78);
+    position: sticky;
+    top: 0px;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.nav-bar li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-bar li a {
+    display: block;
+    width: 130px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: rgb(245, 244, 221);
+    font-size: 20px;
+}
+
+.nav-bar li a:hover {
+    background-color: rgb(39, 84, 138);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 1300px;
+}
+
+.left-content, .right-content {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex-basis: 400px;
+    background-color: rgb(215, 199, 152);
+    padding: 10px;
+}
+
+.left-content img {
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+    margin-block: 20px;
+}
+
+.left-content p {
+    text-align: justify;
+}
+
+.left-content h2 {
+    margin-top: 10px;
+    color: rgb(21, 49, 83);
+}
+
+.image {
+    text-align: center;
+}
+
+.main-content {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    flex-basis: 1500px;
+    
+}
+
+.highlight, .content {
+    background-color: rgb(251, 246, 235);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 30px;
+}
+
+.highlight {
+    grid-column: 1 / span 3;
+    
+}
+
+
+.highlight h1, .content h3{
+    margin-block: 20px;
+}
+
+.highlight img {
+    width: 100%;
+    
+    margin-block: 20px;
+    
+}
+
+.footer {
+    color: rgb(243, 243, 224);
+    font-size: 20px;
+    padding: 20px;
+    position: static;
+    background-color: rgb(39, 84, 138);
+    text-align: center;
+}
+
+@media only screen and (max-width:1000px){
+    .main-content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .highlight {
+        grid-column: 1 / span 1;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .flex-container, .nav-bar ul {
+        flex-direction: column;
+    }
+    .nav-bar {
+        position: static;
+    }
+    .nav-bar li a {
+        width: 100%;
+    }
+}
