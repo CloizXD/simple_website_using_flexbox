@@ -143,11 +143,31 @@ p {
     
 }
 
+.images-container-row {
+    display: flex;
+    
+    width: 1300px;
+    
+}
+
+.images-container-column img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4px;
+}
+
+.images-container-column {
+    margin: 2px;
+}
+
 .footer {
     color: rgb(243, 243, 224);
     font-size: 20px;
     padding: 20px;
+    
     position: static;
+    
     background-color: rgb(39, 84, 138);
     text-align: center;
 }
@@ -160,6 +180,7 @@ p {
     .highlight {
         grid-column: 1 / span 1;
     }
+     
 }
 
 @media only screen and (max-width:800px){
@@ -171,5 +192,9 @@ p {
     }
     .nav-bar li a {
         width: 100%;
+    }
+
+    .images-container-row {
+        flex-direction: column;
     }
 }
