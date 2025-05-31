@@ -213,8 +213,8 @@ p {
     }
 
     .images-container-column {
-        max-width: 90%;
-        flex: 90%;
+        max-width: 100%;
+        flex: 100%;
     }
 
 
