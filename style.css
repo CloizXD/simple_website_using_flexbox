@@ -36,6 +36,7 @@ p {
     background-color: rgb(24, 59, 78);
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .nav-bar ul {
@@ -62,11 +63,25 @@ p {
     background-color: rgb(39, 84, 138);
 }
 
+
+
 .dropdown {
     position: relative;
     display: inline-block;
     
+    
 }
+
+.dropdown span {
+    display: block;
+    width: 80px;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgb(245, 244, 221);
+    font-size: 15px;
+}
+
+
 
 .dropdown-content ul{
     height: 10%;
@@ -102,6 +117,11 @@ p {
     
 }
 
+.dropdown:hover {
+    background-color:  rgb(39, 84, 138);
+    cursor: pointer;
+}
+
 
 
 
@@ -133,7 +153,13 @@ p {
     width: 100%;
     height: auto;
     margin-block: 20px;
+    transition: transform 0.5s ease;
 }
+
+.left-content img:hover {
+    transform: scale(1.2,1.2);
+}
+
 
 .left-content ul {
     padding-left: 15px;
@@ -173,6 +199,14 @@ p {
     padding: 30px;
 }
 
+.content {
+    transition: transform 0.5s ease-out;
+}
+
+.content:hover {
+    transform: scale(1.1,1.1);
+}
+
 .highlight {
     grid-column: 1 / span 3;
     
@@ -190,6 +224,7 @@ p {
     
 }
 
+
 .images-container-row {
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +241,7 @@ p {
     width:  100%;
     border-radius: 10px;
     vertical-align: middle;
+    transition: transform 0.7s ease;
 }
 
 .images-container-column {
@@ -213,6 +249,12 @@ p {
     max-width: 25%;
     flex: 25%;
     
+    
+}
+
+.images-container-column img:hover {
+    transform: scale(1.2,1.2);
+    position: relative;
     
 }
 
@@ -260,6 +302,28 @@ p {
         max-width: 100%;
         flex: 100%;
     }
+
+    .dropdown {
+        width: 100%;
+        position: relative;
+        
+    }
+     .dropdown span {
+        margin-inline: auto;
+     }
+
+     .dropdown-content ul {
+        width: 100%;
+        
+     }
+
+     .dropdown-content li a {
+        text-align: center;
+        padding: 15px 10px;
+     }
+
+
+
 
 
 }
